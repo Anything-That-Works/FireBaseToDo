@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0515407127443E6400D92E6A /* FireBaseToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515407027443E6400D92E6A /* FireBaseToDoApp.swift */; };
-		0515407327443E6400D92E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515407227443E6400D92E6A /* ContentView.swift */; };
+		0515407327443E6400D92E6A /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515407227443E6400D92E6A /* TaskListView.swift */; };
 		0515407527443E6600D92E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0515407427443E6600D92E6A /* Assets.xcassets */; };
 		0515407827443E6600D92E6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0515407727443E6600D92E6A /* Preview Assets.xcassets */; };
+		0515408027443E9B00D92E6A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515407F27443E9B00D92E6A /* Task.swift */; };
+		051540832744450100D92E6A /* TasksCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051540822744450100D92E6A /* TasksCellViewModel.swift */; };
+		051540852744470800D92E6A /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051540842744470800D92E6A /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0515406D27443E6400D92E6A /* FireBaseToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0515407027443E6400D92E6A /* FireBaseToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseToDoApp.swift; sourceTree = "<group>"; };
-		0515407227443E6400D92E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0515407227443E6400D92E6A /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		0515407427443E6600D92E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0515407727443E6600D92E6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0515407F27443E9B00D92E6A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		051540822744450100D92E6A /* TasksCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCellViewModel.swift; sourceTree = "<group>"; };
+		051540842744470800D92E6A /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		0515406F27443E6400D92E6A /* FireBaseToDo */ = {
 			isa = PBXGroup;
 			children = (
+				05154081274444E800D92E6A /* ViewModel */,
+				0515407E27443E7E00D92E6A /* Model */,
 				0515407027443E6400D92E6A /* FireBaseToDoApp.swift */,
-				0515407227443E6400D92E6A /* ContentView.swift */,
+				0515407227443E6400D92E6A /* TaskListView.swift */,
 				0515407427443E6600D92E6A /* Assets.xcassets */,
 				0515407627443E6600D92E6A /* Preview Content */,
 			);
@@ -65,6 +73,23 @@
 				0515407727443E6600D92E6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0515407E27443E7E00D92E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0515407F27443E9B00D92E6A /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05154081274444E800D92E6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				051540822744450100D92E6A /* TasksCellViewModel.swift */,
+				051540842744470800D92E6A /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0515407327443E6400D92E6A /* ContentView.swift in Sources */,
+				0515407327443E6400D92E6A /* TaskListView.swift in Sources */,
+				051540832744450100D92E6A /* TasksCellViewModel.swift in Sources */,
+				051540852744470800D92E6A /* TaskListViewModel.swift in Sources */,
+				0515408027443E9B00D92E6A /* Task.swift in Sources */,
 				0515407127443E6400D92E6A /* FireBaseToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
