@@ -11,7 +11,9 @@ import Firebase
 struct FireBaseToDoApp: App {
     init(){
         FirebaseApp.configure()
-        Auth.auth().signInAnonymously()
+        if Auth.auth().currentUser == nil {
+            Auth.auth().signInAnonymously()
+        }
     }
     
     var body: some Scene {

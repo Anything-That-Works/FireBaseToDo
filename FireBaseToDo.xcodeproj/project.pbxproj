@@ -14,6 +14,9 @@
 		0515408027443E9B00D92E6A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515407F27443E9B00D92E6A /* Task.swift */; };
 		051540832744450100D92E6A /* TasksCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051540822744450100D92E6A /* TasksCellViewModel.swift */; };
 		051540852744470800D92E6A /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051540842744470800D92E6A /* TaskListViewModel.swift */; };
+		056D3AB12746605200CC2108 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3AB02746605200CC2108 /* SignIn.swift */; };
+		056D3AB3274661FB00CC2108 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3AB2274661FB00CC2108 /* SignInView.swift */; };
+		056D3AB62746790D00CC2108 /* SignInWithAppleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3AB52746790D00CC2108 /* SignInWithAppleCoordinator.swift */; };
 		05BF65ED27458ABE0089D07D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05BF65EC27458ABE0089D07D /* GoogleService-Info.plist */; };
 		05BF65F02745908A0089D07D /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF65EF2745908A0089D07D /* TaskRepository.swift */; };
 		2E103EBC3F88081BD75C904D /* Pods_FireBaseToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E93FD383554D1DD5B84EDB1 /* Pods_FireBaseToDo.framework */; };
@@ -29,6 +32,9 @@
 		0515407F27443E9B00D92E6A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		051540822744450100D92E6A /* TasksCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCellViewModel.swift; sourceTree = "<group>"; };
 		051540842744470800D92E6A /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		056D3AB02746605200CC2108 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		056D3AB2274661FB00CC2108 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		056D3AB52746790D00CC2108 /* SignInWithAppleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleCoordinator.swift; sourceTree = "<group>"; };
 		05BF65EC27458ABE0089D07D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05BF65EF2745908A0089D07D /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		2E93FD383554D1DD5B84EDB1 /* Pods_FireBaseToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,11 +74,12 @@
 		0515406F27443E6400D92E6A /* FireBaseToDo */ = {
 			isa = PBXGroup;
 			children = (
+				056D3AAF2746603100CC2108 /* Views */,
+				056D3AB4274678D300CC2108 /* Services */,
 				05BF65EE274590720089D07D /* Repositories */,
 				05154081274444E800D92E6A /* ViewModel */,
 				0515407E27443E7E00D92E6A /* Model */,
 				0515407027443E6400D92E6A /* FireBaseToDoApp.swift */,
-				0515407227443E6400D92E6A /* TaskListView.swift */,
 				0515407427443E6600D92E6A /* Assets.xcassets */,
 				05BF65EC27458ABE0089D07D /* GoogleService-Info.plist */,
 				0515407627443E6600D92E6A /* Preview Content */,
@@ -103,6 +110,24 @@
 				051540842744470800D92E6A /* TaskListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		056D3AAF2746603100CC2108 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0515407227443E6400D92E6A /* TaskListView.swift */,
+				056D3AB02746605200CC2108 /* SignIn.swift */,
+				056D3AB2274661FB00CC2108 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		056D3AB4274678D300CC2108 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				056D3AB52746790D00CC2108 /* SignInWithAppleCoordinator.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		05BF65EE274590720089D07D /* Repositories */ = {
@@ -248,8 +273,11 @@
 				05BF65F02745908A0089D07D /* TaskRepository.swift in Sources */,
 				0515407327443E6400D92E6A /* TaskListView.swift in Sources */,
 				051540832744450100D92E6A /* TasksCellViewModel.swift in Sources */,
+				056D3AB62746790D00CC2108 /* SignInWithAppleCoordinator.swift in Sources */,
 				051540852744470800D92E6A /* TaskListViewModel.swift in Sources */,
+				056D3AB12746605200CC2108 /* SignIn.swift in Sources */,
 				0515408027443E9B00D92E6A /* Task.swift in Sources */,
+				056D3AB3274661FB00CC2108 /* SignInView.swift in Sources */,
 				0515407127443E6400D92E6A /* FireBaseToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

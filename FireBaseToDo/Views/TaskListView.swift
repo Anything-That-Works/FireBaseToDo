@@ -11,6 +11,7 @@ struct TaskListView: View {
     @ObservedObject var taskListViewModel = TaskListViewModel()
     let tasks = testDataTasks
     @State var presentAddNewItem = false
+    @State var showSignInForm = false
     var body: some View {
         NavigationView {
             VStack(alignment: .leading){
@@ -35,7 +36,22 @@ struct TaskListView: View {
                         Text("Add New task")
                     }.padding()
                 }
-            }.navigationBarTitle("Tasks")
+            }
+            .sheet(isPresented: $showSignInForm,content: {
+                SignInView()
+            })
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        self.showSignInForm.toggle()
+                    } label: {
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                }
+            }
+            .navigationBarTitle("Tasks")
         }
     }
 }
@@ -62,7 +78,7 @@ struct TaskCell: View {
             TextField("Enter the task title", text: $taskCellViewModel.task.title, onCommit: {
                 self.onCommit(self.taskCellViewModel.task)
             })
-                
+            
         }
     }
 }
